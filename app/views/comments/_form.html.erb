@@ -1,0 +1,5 @@
+<%= form_for @comment, html: { multipart: true } do |f| %>
+<%= f.text_area :text %>
+<%= f.file_field :photo_id %>
+<%= f.submit %>
+<% end %>
